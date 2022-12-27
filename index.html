@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <title>Aliffandy Portofolio</title>
+        <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style1.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    
+    <body id="body">
+        <section class="homepage1">
+            <div id='header1' class="header1">
+                <i onclick="showbar()" id="bar" class="fa-solid fa-bars fa-2x"></i>
+                <div id="header">
+                    <li><a class="home" >Home</a></li>
+                    <li><a href="porto.html">Portofolio</a></li>
+                    <li><a href="testi.html">Testimoni</a></li>
+                    <li><a href="profile.html">Profil</a></li>
+                </div>
+            </div>
+            <div class="container">
+                <div class="isihome">
+                    <h5>Portofolio</h5>
+                    <h1><b>Muhammad Aliffandy</b></h1>
+                    <h4>
+                        Mahasiswa S1 Teknologi Informasi dengan pengalaman 2+ tahun dalam graphic design,
+                        dengan menguasai beragam software seperti Adobe Illustrator, Figma, Adobe Photoshop. 
+                        Berpengalaman dalam pembuatan mock-up, dan visual untuk sosialmedia dan lainnya.
+                    </h4>
+    
+                    <button type="submit" name="regis"> 
+                        <a href="porto.html">Masuk</a>
+                    </button>
+                </div>
+                 <img class="imgp" src="Frame 2.png" alt="fotofandy">
+            </div>
+        </section>
+
+
+        <section class="sectionm">
+            <h1 class="headline2">Karya Design</h1>
+            <h4 class="quotes">Keindahan sebuah karya bukan dinilai dari indah atau buruk tampilannya,<br>
+            namun yang membuatnya indah adalah makna & arti dibaliknya.</h4>
+            <div class="container2">
+                <div class="box1">
+                    <i class="fa-solid fa-draw-polygon fa-5x"></i>  
+                    <p>Kumpulan karyaku tentang<br>
+                    desain logo dari berbagai lomba<br>
+                    dan freelance yang pernah kukerjakan.</p>
+                </div>
+                <div class="box2">
+                    <i class="fa-solid fa-pen-nib fa-5x"></i> 
+                    <p>Kumpulan karyaku tentang<br>
+                    desain UX/UX dengan berbagai<br>
+                    konsep serta simplicity dan estetik.</p>
+                </div>
+                <div class="box3">
+                    <i class="fa-solid fa-table fa-5x"></i>
+                    <p>Kumpulan karyaku tentang<br>
+                    desain poster dengan berbagai macam<br>
+                    style dan tema yang berbeda.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="container3">
+                <img class="imgw" src="work.png">
+                <div class="butuh">
+                    <h1 class="headline3">Butuh Saya?</h1>
+                    <p class="text3">Ingin mengetahui kinerja saya atau <br>
+                    hasil yang saya peroleh dari berkecimpung<br>
+                    dalam bidang design yang saya lakukan. Klik <br>
+                    tombol dibawah dan kunjungi Sosial Media saya .
+                    </p>
+                    <button class="kunjungi"><a href="profile.html">Kunjungi</a></button>
+                    <div class="sosmed">
+                        <i id="sosmed"  class="fa-brands fa-facebook fa-1x"></i>
+                        <i id="sosmed"  class="fa-brands fa-instagram fa-1x"></i>
+                        <i id="sosmed"  class="fa-brands fa-twitter fa-1x"></i>
+                        <i id="sosmed"  class="fa-brands fa-linkedin fa-1x"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </body>
+    <script>
+        
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("header1");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } 
+
+        else {
+            header.classList.remove("sticky");
+        }
+        }
+
+        var showheader = document.getElementById("header");
+        function showbar(){
+            if(showheader.style.opacity == "0"){
+                showheader.style.opacity = "1";
+                showheader.style.position ="static";
+            }else{
+                showheader.style.opacity = "0";
+                showheader.style.position ="absolute";
+
+            }
+        }
+
+
+
+    </script>
+</html>
